@@ -1,7 +1,8 @@
-from flask import flask
+from flask import Flask
 from socket import gethostname
 app = Flask(__name__)
 
+
 @app.route('/')
 def hello_world():
-  return 'Hello World! ' + gethostname()
+    return 'Hello World! ' + gethostname()
